@@ -3,18 +3,18 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About Us">
-  <div
-    class="absolute min-h-screen w-full inset-0 -z-10 bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:10px,10px]"
-  >
+  <main class="flex flex-col h-full w-screen p-[1rem] relative">
     <div
-      class="hidden absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_100px,#a4bfeb,transparent)]"
+      class="absolute inset-0 -z-10 bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:3rem_2rem]"
     >
+      <!-- <div
+        class="h-full w-full bg-[radial-gradient(circle_800px_at_100%_200px,#e8d7fa,transparent)]"
+      >
+      </div> -->
+      <!-- pl-[2rem] -->
     </div>
-  </div>
-
-  <main class="flex flex-col h-full w-screen p-[1rem]">
     <div
-      class="text-[3rem] md:text-[4rem] pl-[2rem] lg:text-[6rem] flex flex-col font-bold font-['Krona_One'] underline decoration-4 decoration-[#77e272]"
+      class="text-[3rem] md:text-[4rem] lg:text-[6rem] flex flex-col font-bold font-['Krona_One'] underline decoration-4 decoration-[#77e272]"
     >
       <span class="drop-shadow-4xl">ABOUT</span>
       <span class="drop-shadow-4xl">US</span>
@@ -54,20 +54,18 @@ import Layout from "../layouts/Layout.astro";
         <div
           class="text-lg font-semibold lg:text-lg mt-2 flex flex-row gap-4 flex-wrap"
         >
-          <div class="flex gap-1">
+          <!-- <div class="flex gap-1">
             <img src="/sebi-logo.png" class="w-10 h-4 self-center" alt="" />
             <span
               >registered <span class="underline italic"
                 >Research Analyst
               </span></span
             >
-          </div>
+          </div> -->
           <div class="flex gap-1">
             <img src="/amfi.png" class="rounded-sm w-7 h-7" alt="" />
-            <span
-              >registered <span class="underline italic"
-                >Mutual Funds Distributor</span
-              ></span
+            <span>registered</span><span class="underline italic"
+              >Mutual Funds Distributor</span
             >
           </div>
         </div>
@@ -80,11 +78,11 @@ import Layout from "../layouts/Layout.astro";
         <div class="mt-2 flex gap-2">
           <img src="/gmail.png" class="h-8 w-8" alt="" />
           <img src="/phone-call.png" class="h-8 w-8" alt="" />
-          <a href="https://www.instagram.com/dishannnt/"
-            ><img src="/instagram.png" class="h-8 w-8" alt="" /></a
-          >
-          <a href="https://www.linkedin.com/in/dishant-mittal-53b1811b4/"
-            ><img src="/linkedin.png" class="h-8 w-8" alt="" />
+          <a href="https://www.instagram.com/dishannnt/">
+            <img src="/instagram.png" class="h-8 w-8" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/dishant-mittal-53b1811b4/">
+            <img src="/linkedin.png" class="h-8 w-8" alt="" />
           </a>
         </div>
       </div>

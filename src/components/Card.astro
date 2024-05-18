@@ -4,7 +4,7 @@ const { cardNumber, cardTitle, cardImage } = Astro.props;
 ---
 
 <article
-  class="flex flex-col relative overflow-clip px-4 pb-4 pt-[6rem] lg:pt-[8rem] lg:w-2/5 rounded-[80px] border-gray-900 border-4 bg-transparent shadow-[5px_5px_0px_0px_rgba(6,196,34)]"
+  class="flex flex-col relative overflow-clip rounded-[80px] mx-2 px-4 pb-4 pt-[6rem] lg:pt-[8rem] lg:w-2/5 border-gray-900 border-4 bg-transparent shadow-[5px_5px_0px_0px_rgba(6,196,34)]"
 >
   <div
     class="text-red-500 font-[monoton] opacity-[0.3] text-[7rem] pointer-events-none absolute top-[-.4em] left-[-.5em] whitespace-nowrap"
@@ -12,7 +12,7 @@ const { cardNumber, cardTitle, cardImage } = Astro.props;
     0{cardNumber}
   </div>
   <div
-    class="w-[4.5rem] top-3 h-[4.5rem] sm:w-[6rem] sm:h-[6rem] absolute sm:top-4 right-2"
+    class="absolute right-2 top-3 w-[4.5rem] h-[4.5rem] sm:w-[6rem] sm:h-[6rem] sm:top-4"
   >
     <img src={cardImage} class="object-cover" />
   </div>

@@ -1,6 +1,10 @@
 ---
-const { lntext, address, isContact = false } = Astro.props;
 import Contact from "./Contact.astro";
+const { pathname } = Astro.url;
+const path = pathname.match(/\/$/) ? pathname.slice(0, -1) : pathname;
+const { linkText, address, isContact = false } = Astro.props;
+const linkClasses =
+  "decoration-4 text-gray-700 font-semibold decoration-orange-400";
 ---
 
 <li>
@@ -8,13 +12,17 @@ import Contact from "./Contact.astro";
     !isContact ? (
       <a
         href={address}
-        class="hover:underline decoration-4 text-gray-700 font-semibold decoration-orange-400"
+        class={
+          linkClasses +
+          " hover:underline hover:bg-transparent" +
+          (path === address ? " underline" : "")
+        }
       >
-        {lntext}
+        {linkText}
       </a>
     ) : (
       <details class="dropdown dropdown-bottom">
-        <summary class="hover:underline decoration-4 text-gray-700 font-semibold decoration-orange-400 ">
+        <summary class={linkClasses + " hover:bg-orange-300"}>
           Contact Us
         </summary>
         <Contact />
