@@ -1,0 +1,34 @@
+---
+import "@fontsource/monoton";
+const { cardNumber, cardTitle, cardImage } = Astro.props;
+---
+
+<article
+  class="flex flex-col relative overflow-clip px-4 pb-4 pt-[6rem] lg:pt-[8rem] lg:w-2/5 rounded-[80px] border-gray-900 border-4 bg-transparent shadow-[5px_5px_0px_0px_rgba(6,196,34)]"
+>
+  <div
+    class="text-red-500 font-[monoton] opacity-[0.3] text-[7rem] pointer-events-none absolute top-[-.4em] left-[-.5em] whitespace-nowrap"
+  >
+    0{cardNumber}
+  </div>
+  <div
+    class="w-[4.5rem] top-3 h-[4.5rem] sm:w-[6rem] sm:h-[6rem] absolute sm:top-4 right-2"
+  >
+    <img src={cardImage} class="object-cover" />
+  </div>
+
+  <div class="mb-2">
+    <span class="font-extrabold text-3xl text-gray-800 bg-yellow-300"
+      >{cardTitle}</span
+    >
+  </div>
+  <p class="font-mono">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ipsam quos
+    dignissimos ab sequi veniam inventore ad ea fugiat! Possimus consequuntur
+    voluptatem laboriosam doloremque incidunt nesciunt ex magnam, distinctio
+    iure est ducimus quis? Corrupti, culpa omnis eveniet facere explicabo sunt
+    voluptatibus sapiente magnam quos aperiam repellendus deserunt incidunt
+    accusamus? Ratione vero iste magnam quis rem quaerat reprehenderit nostrum
+    eos error.
+  </p>
+</article>

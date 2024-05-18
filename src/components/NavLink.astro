@@ -1,0 +1,24 @@
+---
+const { lntext, address, isContact = false } = Astro.props;
+import Contact from "./Contact.astro";
+---
+
+<li>
+  {
+    !isContact ? (
+      <a
+        href={address}
+        class="hover:underline decoration-4 text-gray-700 font-semibold decoration-orange-400"
+      >
+        {lntext}
+      </a>
+    ) : (
+      <details class="dropdown dropdown-bottom">
+        <summary class="hover:underline decoration-4 text-gray-700 font-semibold decoration-orange-400 ">
+          Contact Us
+        </summary>
+        <Contact />
+      </details>
+    )
+  }
+</li>

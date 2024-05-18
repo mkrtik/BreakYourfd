@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Our Services">
+  <div
+    class="absolute inset-0 -z-10 min-h-screen w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
+  >
+  </div>
+  <main class="mb-20 flex flex-col">
+    <div
+      class="text-[3rem] md:text-[4rem] pl-[2rem] lg:text-[6rem] flex flex-col font-bold font-['Krona_One'] underline decoration-4 decoration-[#da5858]"
+    >
+      <span>OUR</span>
+      <span>SERVICES</span>
+    </div>
+    <div
+      class="m-2 flex flex-col lg:flex-row justify-around items-center gap-[2rem]"
+    >
+      <Card
+        cardNumber="1"
+        cardTitle="PORTFOLIO MANAGEMENT"
+        cardImage="/portfolio.png"
+      /><Card
+        cardNumber="2"
+        cardTitle="MUTUAL FUNDS"
+        cardImage="/mutualfunds.png"
+      /><Card cardNumber="3" cardTitle="BONDS" cardImage="/bonds.png" />
+    </div>
+  </main>
+</Layout>

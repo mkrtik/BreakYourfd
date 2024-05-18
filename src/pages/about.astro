@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About Us">
+  <div
+    class="absolute min-h-screen w-full inset-0 -z-10 bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:10px,10px]"
+  >
+    <div
+      class="hidden absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_100px,#a4bfeb,transparent)]"
+    >
+    </div>
+  </div>
+
+  <main class="flex flex-col h-full w-screen p-[1rem]">
+    <div
+      class="text-[3rem] md:text-[4rem] pl-[2rem] lg:text-[6rem] flex flex-col font-bold font-['Krona_One'] underline decoration-4 decoration-[#77e272]"
+    >
+      <span class="drop-shadow-4xl">ABOUT</span>
+      <span class="drop-shadow-4xl">US</span>
+    </div>
+    <div
+      class="absolute top-[4rem] right-[0rem] sm:top-[6rem] sm:right-[0rem] lg:top-[4rem] lg:right-[0rem] -z-10"
+    >
+      <img
+        src="/guyworking.png"
+        class="w-[15rem] h-[15rem] md:w-[25rem] md:h-[19rem] lg:w-[33rem] lg:h-[29rem] opacity-90"
+        alt=""
+      />
+    </div>
+
+    <div
+      class="flex flex-col sm:flex-row w-[3/5] sm:w-full lg:w-4/5 bg-transparent font-mono p-[1rem] rounded-[3rem] shadow-[0_10px_20px_rgba(76,43,207,.7)] items-center"
+    >
+      <div class="avatar">
+        <div
+          class="w-[10rem] h-[10rem] rounded-full border-purple-500 border-4"
+        >
+          <img src="/profile.jpeg" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-around p-6">
+        <h2
+          class="text-3xl sm:text-4xl font-bold underline decoration-cyan-200 decoration-4"
+        >
+          Meet the Founder
+        </h2>
+        <h3
+          class="text-2xl sm:text-3xl font-semibold font-mono underline decoration-[#ffa62b] decoration-4"
+        >
+          Dishant Mittal
+        </h3>
+
+        <div
+          class="text-lg font-semibold lg:text-lg mt-2 flex flex-row gap-4 flex-wrap"
+        >
+          <div class="flex gap-1">
+            <img src="/sebi-logo.png" class="w-10 h-4 self-center" alt="" />
+            <span
+              >registered <span class="underline italic"
+                >Research Analyst
+              </span></span
+            >
+          </div>
+          <div class="flex gap-1">
+            <img src="/amfi.png" class="rounded-sm w-7 h-7" alt="" />
+            <span
+              >registered <span class="underline italic"
+                >Mutual Funds Distributor</span
+              ></span
+            >
+          </div>
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+          voluptatum consequuntur consequatur, obcaecati, officiis blanditiis,
+          voluptatem repudiandae optio rem odit est eligendi? Eius laboriosam,
+          omnis tempora id similique dolorum dolorem?
+        </div>
+        <div class="mt-2 flex gap-2">
+          <img src="/gmail.png" class="h-8 w-8" alt="" />
+          <img src="/phone-call.png" class="h-8 w-8" alt="" />
+          <a href="https://www.instagram.com/dishannnt/"
+            ><img src="/instagram.png" class="h-8 w-8" alt="" /></a
+          >
+          <a href="https://www.linkedin.com/in/dishant-mittal-53b1811b4/"
+            ><img src="/linkedin.png" class="h-8 w-8" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

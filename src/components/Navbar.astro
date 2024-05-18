@@ -1,0 +1,60 @@
+---
+import "@fontsource-variable/inter";
+import NavLink from "./NavLink.astro";
+import Contact from "./Contact.astro";
+---
+
+<nav class="navbar bg-base-100 border-2 border-b-black shadow-xl">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"></path></svg
+        >
+      </div>
+      <ul
+        tabindex="0"
+        class="font-mono menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li>
+          <details class="dropdown dropdown-bottom">
+            <summary> Contact Us </summary>
+            <Contact />
+          </details>
+        </li>
+      </ul>
+    </div>
+
+    <a href="/">
+      <img src="/logo.png" alt="Logo" />
+    </a>
+  </div>
+  <div class="navbar-center hidden lg:flex text-lg">
+    <ul class="menu menu-horizontal text-gray-800 px-1 text-lg font-semibold">
+      <NavLink lntext="About Us" address="/about" />
+      <NavLink lntext="Our Services" address="/services" />
+      <NavLink isContact />
+    </ul>
+  </div>
+  <div class="navbar-end justify-end gap-2 font-mono">
+    <a href="/login" class="btn btn-xs md:btn-md hover:bg-cyan-900 btn-outline"
+      >Login</a
+    >
+    <a
+      href="/login"
+      class="btn btn-xs md:btn-md bg-cyan-950 hover:bg-cyan-900 text-white"
+      >Sign Up</a
+    >
+  </div>
+</nav>

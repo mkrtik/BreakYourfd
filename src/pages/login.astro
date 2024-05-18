@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Login">
+  <div
+    class="font-mono flex h-screen w-full items-center justify-center bg-gray-900 bg-cover object-right bg-no-repeat bg-[url(/finance.jpg)]"
+  >
+    <div
+      class="rounded-xl bg-gray-800 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8"
+    >
+      <div class="text-white">
+        <div class="mb-8 flex flex-col items-center">
+          <img src="logoname.png" class="w-[13em] h-[2em] mb-2" />
+          <span class="text-gray-300">Enter Login Details</span>
+        </div>
+        <form action="#">
+          <div class="mb-4 text-lg">
+            <input
+              class="rounded-3xl border-none bg-purple-400 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-200 shadow-lg outline-none backdrop-blur-md"
+              type="text"
+              name="name"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-4 text-lg">
+            <input
+              class="rounded-3xl border-none bg-purple-400 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-200 shadow-lg outline-none backdrop-blur-md"
+              type="password"
+              name="name"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="mt-8 flex justify-center text-lg text-black">
+            <button
+              type="submit"
+              class="rounded-3xl bg-purple-400 bg-opacity-50 px-10 py-2 text-gray-200 shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-purple-600"
+              >Login</button
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</Layout>
